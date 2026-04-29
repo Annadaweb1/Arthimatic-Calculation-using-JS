@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Calculator</title>
+	<link rel="icon" type="image/x-icon" href="calc.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" language="javascript">
+		function sum()
+		{
+			var a = parseInt(document.getElementById("fno").value);
+    var b = parseInt(document.getElementById("sno").value);
+
+    if(!isNaN(a) && !isNaN(b))
+    {
+        var add = a + b;
+        document.getElementById("res").value = add;
+    }
+    else
+    {
+        document.getElementById("res").value = "Please Enter Numbers First";
+    }
+		}
+		function sub()
+		{
+			var a = parseInt(document.getElementById("fno").value);
+    var b = parseInt(document.getElementById("sno").value);
+
+    if(!isNaN(a) && !isNaN(b))
+    {
+        var min = a - b;
+        document.getElementById("res").value = min;
+    }
+    else
+    {
+        document.getElementById("res").value = "Please Enter Numbers First";
+    }
+		}
+		function mul()
+		{
+			var a = parseInt(document.getElementById("fno").value);
+    var b = parseInt(document.getElementById("sno").value);
+
+    if(!isNaN(a) && !isNaN(b))
+    {
+        var into = a * b;
+        document.getElementById("res").value = into;
+    }
+    else
+    {
+        document.getElementById("res").value = "Please Enter Numbers First";
+    }
+		}
+		function div()
+		{
+			var a = parseInt(document.getElementById("fno").value);
+    var b = parseInt(document.getElementById("sno").value);
+
+    if(!isNaN(a) && !isNaN(b))
+    {
+        var harana = a / b;
+        document.getElementById("res").value = harana;
+    }
+    else
+    {
+        document.getElementById("res").value = "Please Enter Numbers First";
+    }
+		}
+		function mod()
+		{
+			var a = parseInt(document.getElementById("fno").value);
+    var b = parseInt(document.getElementById("sno").value);
+
+    if(!isNaN(a) && !isNaN(b))
+    {
+        var modulus = a % b;
+        document.getElementById("res").value = modulus;
+    }
+    else
+    {
+        document.getElementById("res").value = "Please Enter Numbers First";
+    }
+		}
+		
+	</script>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+		<!-- <h1>All Arthimatical Calculator</h1> -->
+		<div class="card">
+			<div class="card-header">
+				<p>All Arthimatical Operation Calculator</p>
+			</div>
+			<div class="card-body">
+				<form class="form">
+					<div class="mb-3">
+						<label class="form-label" for="fno"> 
+							First Number
+						</label>
+						<input type="text" name="fno" id="fno" class="form-control" placeholder="Enter First Number">
+					</div>
+					<div class="mb-3">
+						<label class="form-label" for="sno">
+							Second Number
+						</label>
+						<input type="text" name="sno" id="sno" class="form-control" placeholder="Enter Second Number">
+					</div>
+					<div class="bottn" style="display: flex;justify-content: space-around;align-items: center;">
+						<button type="button" class="btn btn-primary btn-md" style="width:15%;" onclick="sum()"><i class="fa-solid fa-plus"></i></button>
+						<button type="button" id="btnsub" class="btn btn-danger btn-md" style="width:15%;" onclick="sub()"><i class="fa-solid fa-minus"></i></button>
+						<button type="button" id="btnmul" class="btn btn-success btn-md" style="width:15%;" onclick="mul()"><i class="fa-solid fa-xmark"></i></button>
+						<button type="button" id="btndiv" class="btn btn-info btn-md" style="width:15%;" onclick="div()"><i class="fa-solid fa-divide"></i></button>
+						<button type="button" id="btnmod" class="btn btn-warning btn-md" style="width:15%;" onclick="mod()"><i class="fa-solid fa-percent"></i></button>
+						<button type="reset" class="btn btn-md btn-dark">Reset</button>
+					</div>
+					<div class="mb-3 mt-2">
+						<label class="form-label" for="res">
+							Result is :
+						</label>
+						<input type="text" name="res" id="res" placeholder="Show Result Here" class="form-control">
+						<!-- <p class="form-control" id="res"></p> -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+<footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</footer>
+</body>
+</html>
