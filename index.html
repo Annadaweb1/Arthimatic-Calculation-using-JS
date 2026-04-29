@@ -111,14 +111,43 @@
 						</label>
 						<input type="text" name="sno" id="sno" class="form-control" placeholder="Enter Second Number">
 					</div>
-					<div class="bottn" style="display: flex;justify-content: space-around;align-items: center;flex-wrap:wrap;">
-						<button type="button" class="btn btn-primary btn-md" style="width:15%;" onclick="sum()"><i class="fa-solid fa-plus"></i></button>
-						<button type="button" id="btnsub" class="btn btn-danger btn-md" style="width:15%;" onclick="sub()"><i class="fa-solid fa-minus"></i></button>
-						<button type="button" id="btnmul" class="btn btn-success btn-md" style="width:15%;" onclick="mul()"><i class="fa-solid fa-xmark"></i></button>
-						<button type="button" id="btndiv" class="btn btn-info btn-md" style="width:15%;" onclick="div()"><i class="fa-solid fa-divide"></i></button>
-						<button type="button" id="btnmod" class="btn btn-warning btn-md" style="width:15%;" onclick="mod()"><i class="fa-solid fa-percent"></i></button>
-						<button type="reset" class="btn btn-md btn-dark">Reset</button>
-					</div>
+					<div class="bottn row g-2">
+    <div class="col-4 col-sm-2">
+        <button type="button" class="btn btn-primary w-100" onclick="sum()">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+
+    <div class="col-4 col-sm-2">
+        <button type="button" class="btn btn-danger w-100" onclick="sub()">
+            <i class="fa-solid fa-minus"></i>
+        </button>
+    </div>
+
+    <div class="col-4 col-sm-2">
+        <button type="button" class="btn btn-success w-100" onclick="mul()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="col-4 col-sm-2">
+        <button type="button" class="btn btn-info w-100" onclick="div()">
+            <i class="fa-solid fa-divide"></i>
+        </button>
+    </div>
+
+    <div class="col-4 col-sm-2">
+        <button type="button" class="btn btn-warning w-100" onclick="mod()">
+            <i class="fa-solid fa-percent"></i>
+        </button>
+    </div>
+
+    <div class="col-4 col-sm-2">
+        <button type="reset" class="btn btn-dark w-100">
+            Reset
+        </button>
+    </div>
+</div>
 					<div class="mb-3 mt-2">
 						<label class="form-label" for="res">
 							Result is :
